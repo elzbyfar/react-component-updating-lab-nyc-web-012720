@@ -23,6 +23,14 @@ class Timer extends Component {
     clearInterval(this.interval);
   }
 
+  componentDidUpdate() {
+
+  }
+
+  shouldComponentUpdate() {
+    this.componentDidUpdate()
+  }
+
   render() {
     const { time, color, logText } = this.state;
     return (
